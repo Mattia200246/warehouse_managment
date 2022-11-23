@@ -8,5 +8,10 @@ public class Supplier extends Person{
         this.email = email;
     }
 
+    public String getVatNumber() {
+        return vatNumber;
+    }
+    
+
     
 }
