@@ -1,11 +1,9 @@
 public class Customer extends Person{
     final String email;
-    final String address;
 
     public Customer(String name, String surname, String fiscalCode, String phone, String email, String address){
-        super(name, surname, fiscalCode, phone);
+        super(name, surname, fiscalCode, phone, address);
         this.email = email;
-        this.address = address;
     }
 
     public String getEmail() {
