@@ -11,13 +11,17 @@ public class GUI {
         frame = new JFrame("Gestione Magazzino");
         JPanel panel = new JPanel();
         JButton showCustomer = new JButton("Registro Clienti");
-        panel.add(showCustomer);
+        
         JButton showSupplier = new JButton("Registro Fornitore");
-        panel.add(showSupplier);
+       
         
         
         
         frame.add(panel);
+
+        panel.add(showCustomer);
+        panel.add(showSupplier);
+
         frame.setContentPane(panel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(800, 600);
