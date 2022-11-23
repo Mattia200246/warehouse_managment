@@ -15,6 +15,18 @@ public class Supplier extends Person{
     public String getEmail() {
         return email;
     }
+
+    @Override
+    public String toString() {
+        return "Supplier{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", fiscalCode='" + fiscalCode + '\'' +
+                ", phone='" + phone + '\'' +
+                ", vatNumber='" + vatNumber + '\'' +
+                ", email='" + email + '\'' +
+                '}';
+    }
     
 
     
