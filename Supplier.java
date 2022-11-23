@@ -11,6 +11,10 @@ public class Supplier extends Person{
     public String getVatNumber() {
         return vatNumber;
     }
+
+    public String getEmail() {
+        return email;
+    }
     
 
     
