@@ -20,6 +20,10 @@ public class Supplier extends Person{
         return email;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
     @Override
     public String toString() {
         return "Supplier{" +
@@ -32,6 +36,7 @@ public class Supplier extends Person{
                 '}';
     }
     
+
 
     
 }
