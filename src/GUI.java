@@ -1,8 +1,9 @@
-
-
+package src;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+
+import src.view.CustomerGUI;
 
 public class GUI {
     JFrame frame;
@@ -11,14 +12,13 @@ public class GUI {
         frame = new JFrame("Gestione Magazzino");
         JPanel panel = new JPanel();
         JButton showCustomer = new JButton("Registro Clienti");
-        
+        showCustomer.addActionListener(e -> {
+            new CustomerGUI();
+        });
         JButton showSupplier = new JButton("Registro Fornitore");
        
         
-        
-        
         frame.add(panel);
-
         panel.add(showCustomer);
         panel.add(showSupplier);
 
@@ -27,9 +27,6 @@ public class GUI {
         frame.setSize(800, 600);
         frame.setLocationRelativeTo(null);
     }
-
-
-
     private void display() {
         frame.setVisible(true);
     }

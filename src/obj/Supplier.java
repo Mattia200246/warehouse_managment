@@ -1,9 +1,21 @@
-public class Customer extends Person{
+package src.obj;
+
+/*
+ * Rapresent a supplier of a product
+ */
+public class Supplier extends Person{
+    final String vatNumber;
     final String email;
 
-    public Customer(String name, String surname, String fiscalCode, String phone, String email, String address){
+
+    public Supplier(String name, String surname, String fiscalCode, String phone, String vatNumber, String email, String address){
         super(name, surname, fiscalCode, phone, address);
+        this.vatNumber = vatNumber;
         this.email = email;
+    }
+
+    public String getVatNumber() {
+        return vatNumber;
     }
 
     public String getEmail() {
@@ -16,14 +28,17 @@ public class Customer extends Person{
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "Supplier{" +
                 "name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", fiscalCode='" + fiscalCode + '\'' +
                 ", phone='" + phone + '\'' +
+                ", vatNumber='" + vatNumber + '\'' +
                 ", email='" + email + '\'' +
-                ", address='" + address + '\'' +
                 '}';
     }
+    
+
+
     
 }
