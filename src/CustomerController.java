@@ -1,7 +1,7 @@
 package src;
 import src.obj.Customer;
 
-public class Controller {
+public class CustomerController {
     //aggiungi cliente
     public void addCustomer(String name, String surname, String fiscalCode, String phone, String email, String address) {
         Customer customer = new Customer(name, surname, fiscalCode, phone, email, address);

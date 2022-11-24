@@ -1,7 +1,7 @@
 package src.obj;
 import java.util.ArrayList;
 
-import src.Controller;
+import src.CustomerController;
 
 public class Customer extends Person{
     final String email;
@@ -39,7 +39,7 @@ public class Customer extends Person{
     }
 
     public static String showAllCustomer() {
-        return Controller.showAllCustomer();
+        return CustomerController.showAllCustomer();
     }
     
 }
